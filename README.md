@@ -89,5 +89,42 @@ https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/traini
 
  !wget https://cainvas-static.s3.amazonaws.com/media/user_data/cainvas-admin/archive_2.zip
 
+ import tensorflow as tf
+import cv2
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import matplotlib.pyplot as plt
+import os
+
+main_dir = 'archive/insects'
+num_fldrs = 5
+
+# dictionary of labels
+insect_names = {'1':"Butterfly",'2':"Dragonfly",
+               '3':"Grasshopper",'4':"Ladybird",
+               '5':"Mosquito"}
+
+def getdata(folder_path,num_subfolders):
+    global insect_names
+    insects = pd.DataFrame(columns=['image_abs_path','image_labels'])
+    for label in range(1,num_subfolders+1):
+        #print("processing for label: {}".format(label))
+        label_i = folder_path+"/"+insect_names[str(label)]
+        #read directory
+        dirs_label_i =  os.listdir(label_i)
+        idx = 0
+        for image in dirs_label_i:
+            #create a absolute image path
+            insect_i = os.path.join(label_i,image)
+            #print('Absolute path for image no. {} and label {}: {}'\
+                  #.format(idx,label,flower_i))
+
+            #fill the dataframe with path and label
+            insects = insects.append({'image_abs_path':insect_i,
+                            'image_labels':insect_names[str(label)]},
+                           ignore_index=True)
+            idx += 1
+    return insects
+
                 
                 
