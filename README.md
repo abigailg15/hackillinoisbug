@@ -86,5 +86,8 @@ https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/traini
                 print('Test accuracy:', test_acc)
                 
                 Replace img_height, img_width, train_images, train_labels, val_images, val_labels, test_images, and test_labels with your actual data. Additionally, adjust the model architecture, hyperparameters, and training parameters as needed for your specific task and dataset.
+
+ !wget https://cainvas-static.s3.amazonaws.com/media/user_data/cainvas-admin/archive_2.zip
+
                 
                 
