@@ -13,6 +13,7 @@
 - train dataset using opencv
 
 - we will have a numerical value corresponding to good/bad of a bug
+- use tensorflow to train the model
 
 frozen_inference_graph.pb: This file typically contains the frozen graph of a trained TensorFlow model. A frozen graph is a TensorFlow graph where the variables are converted into constants, resulting in a single file that encapsulates the model's architecture and trained weights. It's optimized for inference and can be used directly for deployment without requiring the original model definition or training code.
 
