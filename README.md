@@ -1,3 +1,4 @@
+https://cainvas.ai-tech.systems/use-cases/insect-classifier-app/
 - the robot will move forward for 1 minute
 - every time it detects a bug, it will stop
 - if the bug is a pest/bad : LED yellow
