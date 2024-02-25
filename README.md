@@ -1,3 +1,4 @@
+https://slidesgo.com/theme/construction-project-proposal#search-engineering&position-5&results-162&rs=search&rs=search
 https://cainvas.ai-tech.systems/use-cases/insect-classifier-app/
 - the robot will move forward for 1 minute
 - every time it detects a bug, it will stop
